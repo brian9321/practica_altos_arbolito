@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Programas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Programas</h1>
+        <nav>
+            <ul>
+                <li><a href="#programa1">Programa 1</a></li>
+                <li><a href="#programa2">Programa 2</a></li>
+                <li><a href="#programa3">Programa 3</a></li>
+                <li><a href="#programa4">Programa 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="programa1">
+            <h2>Programa 1: Cálculo de Años Bisiestos</h2>
+            <div class="program-container">
+                <label for="yearInput">Ingresa un año de inicio:</label>
+                <input type="number" id="yearInput" placeholder="Ejemplo: 2023">
+                <button onclick="calcularBisiestos()">Calcular</button>
+                <div id="result"></div>
+            </div>
+            <script src="programa1.js"></script>
+        </section>
+
+        <section id="programa2">
+            <h2>Programa 2: Diferencia de Fechas de Juegos</h2>
+            <div class="program-container">
+                <p>
+                    Juegos disponibles: Breath of the Wild • Tears of the Kingdom • Ocarina of Time • Twilight Princess
+                </p>
+                <label for="game1">Primer juego:</label>
+                <select id="game1">
+                    <option value="Breath of the Wild">Breath of the Wild</option>
+                    <option value="Tears of the Kingdom">Tears of the Kingdom</option>
+                    <option value="Ocarina of Time">Ocarina of Time</option>
+                    <option value="Twilight Princess">Twilight Princess</option>
+                </select>
+                <br><br>
+                <label for="game2">Segundo juego:</label>
+                <select id="game2">
+                    <option value="Breath of the Wild">Breath of the Wild</option>
+                    <option value="Tears of the Kingdom">Tears of the Kingdom</option>
+                    <option value="Ocarina of Time">Ocarina of Time</option>
+                    <option value="Twilight Princess">Twilight Princess</option>
+                </select>
+                <br><br>
+                <button onclick="calcularDiferenciaJuegos()">Calcular Diferencia</button>
+                <div id="result2"></div>
+            </div>
+            <script src="programa2.js"></script>
+        </section>
+
+        <section id="programa3">
+            <h2>Programa 3: Conversor de Texto a Morse y viceversa</h2>
+            <div class="program-container">
+                <p>Ingresa texto natural o código morse (usa '-' para raya y ''' para punto):</p>
+                <textarea id="inputMorse" rows="4" cols="50" placeholder="Ejemplo: HELLO o '---  ...-"></textarea>
+                <br><br>
+                <button onclick="convertirMorse()">Convertir</button>
+                <div id="result3"></div>
+            </div>
+            <script src="programa3.js"></script>
+        </section>
+
+        <section id="programa4">
+            <h2>Programa 4: Cálculo de Daño Pokémon</h2>
+            <div class="program-container">
+                <label for="atacante">Tipo del Pokémon atacante:</label>
+                <select id="atacante">
+                    <option value="Agua">Agua</option>
+                    <option value="Fuego">Fuego</option>
+                    <option value="Planta">Planta</option>
+                    <option value="Eléctrico">Eléctrico</option>
+                </select>
+                <br><br>
+                <label for="defensor">Tipo del Pokémon defensor:</label>
+                <select id="defensor">
+                    <option value="Agua">Agua</option>
+                    <option value="Fuego">Fuego</option>
+                    <option value="Planta">Planta</option>
+                    <option value="Eléctrico">Eléctrico</option>
+                </select>
+                <br><br>
+                <label for="ataque">Ataque (1-100):</label>
+                <input type="number" id="ataque" min="1" max="100">
+                <br><br>
+                <label for="defensa">Defensa (1-100):</label>
+                <input type="number" id="defensa" min="1" max="100">
+                <br><br>
+                <button onclick="calcularDanio()">Calcular Daño</button>
+                <div id="result4"></div>
+            </div>
+            <script src="programa4.js"></script>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Programas</p>
+    </footer>
+</body>
+
+</html>
