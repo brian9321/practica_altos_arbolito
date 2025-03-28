@@ -19,6 +19,3 @@ Este repositorio contiene un proyecto web que reúne cuatro programas desarrolla
    `Daño = 50 * (ataque / defensa) * efectividad`  
    El programa permite seleccionar el tipo del Pokémon atacante y defensor, además de ingresar valores de ataque y defensa (entre 1 y 100).  
    - Se definen cuatro tipos de Pokémon: Agua, Fuego, Planta y Eléctrico, con sus respectivas relaciones de efectividad.
-
-## Estructura del Proyecto
-├── index.html # Archivo principal HTML que integra las 4 secciones ├── styles.css # Archivo de estilos CSS para la apariencia de la página ├── programa1.js # Lógica para el cálculo de años bisiestos ├── programa2.js # Lógica para calcular la diferencia de fechas entre juegos ├── programa3.js # Lógica para la conversión entre texto natural y código morse └── programa4.js # Lógica para el cálculo de daño en batalla Pokémon
